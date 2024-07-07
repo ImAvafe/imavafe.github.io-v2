@@ -1,2 +1,10 @@
-<h1 class="font-bold underline">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import Intro from "$lib/sections/Intro.svelte";
+</script>
+
+<div class="w-full pt-14 flex-col justify-center items-center gap-5 inline-flex">
+  <div class="max-w-5xl">
+    <Intro />
+    <div class="divider"></div>
+  </div>
+</div>

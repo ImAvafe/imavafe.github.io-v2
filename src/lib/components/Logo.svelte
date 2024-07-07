@@ -1,0 +1,1 @@
+<img class="w-36 h-10" src="/src/lib/img/logo.svg" alt="Avafe">
