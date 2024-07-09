@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
 import type { Writable } from 'svelte/store';
 
-export const currentTags: Writable<[string?]> = writable([]);
-export const currentSort: Writable<string | undefined> = writable();
+export const currentTag: Writable<string> = writable('All');
+export const currentSort: Writable<string> = writable('Best');

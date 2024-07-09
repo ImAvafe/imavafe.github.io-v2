@@ -1,19 +1,13 @@
 <script lang="ts">
-  import { currentTags } from "../../stores";
+  import { currentTag } from "../../stores";
 
-  export let tag: string = "tag";
+  export let tag: string;
 
-  $: active = ($currentTags.findIndex((value) => {return value == tag})) >= 0
+  $: active = $currentTag == tag
 
-  function toggleTag(tags: [string]) {
-    if (active) {
-      tags.splice(tags.findIndex((chosenTag: string) => {return chosenTag == tag}), 1)
-    } else {
-      tags.push(tag)
-    }
-
-    return tags
+  function setTag() {
+    return tag
   }
 </script>
 
-<button on:click={() => {currentTags.update(toggleTag)}} class="btn btn-sm {(active) ? 'btn-primary' : 'btn-neutral'}">{tag}</button>
+<button on:click={() => {currentTag.update(setTag)}} class="btn btn-sm {(active) ? 'btn-primary' : 'btn-neutral'}">{tag}</button>
