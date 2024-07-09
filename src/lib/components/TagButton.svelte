@@ -16,4 +16,4 @@
   }
 </script>
 
-<button on:click={() => {currentTags.update(toggleTag)}} class="btn btn-sm {(active) ? 'btn-primary' : 'btn-secondary'}">{tag}</button>
+<button on:click={() => {currentTags.update(toggleTag)}} class="btn btn-sm {(active) ? 'btn-primary' : 'btn-neutral'}">{tag}</button>
