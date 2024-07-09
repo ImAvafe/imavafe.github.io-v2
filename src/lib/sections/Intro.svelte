@@ -5,7 +5,7 @@
 
 <div class="flex-col justify-start items-center gap-4 inline-flex">
   <div class="avatar">
-    <div class="w-44 rounded-full border-2 border-white/opacity-20">
+    <div class="w-44 rounded-full">
       <img src="/src/lib/img/profile-picture.png" alt="Avafe's PFP"/>
     </div>
   </div>
