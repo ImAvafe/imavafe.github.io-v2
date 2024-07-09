@@ -1,6 +1,7 @@
 <script>
   import ProjectCard from "$lib/components/ProjectCard.svelte";
   import TagButton from "$lib/components/TagButton.svelte";
+  import { projects } from "$lib/data/projects";
 </script>
 
 <span class="flex-col gap-3 inline-flex">
@@ -9,7 +10,8 @@
     <TagButton tag="Tag2" />
   </span>
   <span class="w-full flex-col gap-3 inline-flex">
-    <ProjectCard name="Poser! 🤔" iconSrc="/src/lib/icons/roblox.svg" href="https://www.roblox.com/games/12716101148" bannerSrc="/src/lib/img/projects/Poser.png" />
-    <ProjectCard name="OnyxUI" iconSrc="/src/lib/icons/github.svg" href="https://www.roblox.com/games/12716101148" bannerSrc="/src/lib/img/projects/OnyxUI.png" />
+    {#each projects as project}
+      <ProjectCard project={project} />
+    {/each}
   </span>
 </span>
