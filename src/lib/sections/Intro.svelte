@@ -1,5 +1,6 @@
 <script>
-  import Logo from "/src/lib/components/Logo.svelte";
+  import Logo from "$lib/components/Logo.svelte";
+  import SocialLink from "$lib/components/SocialLink.svelte";
 </script>
 
 <div class="flex-col justify-start items-center gap-4 inline-flex">
@@ -15,9 +16,9 @@
     </div>
   </div>
   <div class="justify-center items-center inline-flex">
-    <a role="button" href="https://www.roblox.com/users/144146784/profile" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-square btn-lg"><img src="/src/lib/icons/roblox.svg" alt="Roblox" /></a>
-    <a role="button" href="https://github.com/ImAvafe" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-square btn-lg"><img src="/src/lib/icons/github.svg" alt="Github" /></a>
-    <a role="button" href="https://discord.com/invite/fyeYey62Dm" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-square btn-lg"><img src="/src/lib/icons/discord.svg" alt="Discord" /></a>
-    <a role="button" href="https://loneka.com/" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-square btn-lg"><img src="/src/lib/icons/loneka.svg" alt="Loneka" /></a>
+    <SocialLink href="https://www.roblox.com/users/144146784/profile" src="/src/lib/icons/roblox.svg" alt="Roblox" />
+    <SocialLink href="https://github.com/ImAvafe" src="/src/lib/icons/github.svg" alt="Github" />
+    <SocialLink href="https://discord.com/invite/fyeYey62Dm" src="/src/lib/icons/discord.svg" alt="Discord" />
+    <SocialLink href="https://loneka.com" src="/src/lib/icons/loneka.svg" alt="Loneka" />
   </div>
 </div>
