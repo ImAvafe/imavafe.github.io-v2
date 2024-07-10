@@ -6,8 +6,6 @@
   import { tagsCompatibility } from "$lib/data/filters";
 
   $: sortedProjects = ($currentSort == "Best") ? projects : ($currentSort == "Newest") ? Array.from(projects).sort((a, b) => b.creationStamp - a.creationStamp) : ($currentSort == "Abc.") ? Array.from(projects).sort((a, b) => a.displayName.localeCompare(b.displayName)) : projects
-
-  console.log(sortedProjects)
 </script>
 
 <span class="flex-col gap-4 inline-flex">
