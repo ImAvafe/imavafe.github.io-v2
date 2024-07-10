@@ -27,7 +27,7 @@ export default {
           primary: "#9F84FF",
           secondary: "white",
           neutral: "#292929",
-          "base-100": "#0E0E0E",
+          "base-100": "#000000",
         },
         light: {
           ...themes["light"],
