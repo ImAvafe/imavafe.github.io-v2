@@ -23,3 +23,9 @@
   <slot />
   <Footer />
 </div>
+
+<style>
+  :global(::selection) {
+    background-color: #7b57ff;
+  }
+</style>
