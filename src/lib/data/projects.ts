@@ -16,7 +16,7 @@ export const projects: Project[] = [
 		displayName: 'Poser!',
 		type: 'game',
 		platform: 'roblox',
-		href: 'https://example.com',
+		href: 'https://www.roblox.com/games/12716101148/',
 		creationStamp: 1678223058,
 		bannerSrc: '/src/lib/img/projects/Poser.png'
 	},
@@ -25,7 +25,7 @@ export const projects: Project[] = [
 		displayName: 'OnyxUI',
 		type: 'resource',
 		platform: 'github',
-		href: 'https://example.com',
+		href: 'https://github.com/ImAvafe/OnyxUI',
 		creationStamp: 1683691200,
 		bannerSrc: '/src/lib/img/projects/OnyxUI.png'
 	},
@@ -34,7 +34,7 @@ export const projects: Project[] = [
 		displayName: 'NeoHotbar',
 		type: 'resource',
 		platform: 'github',
-		href: 'https://example.com',
+		href: 'https://github.com/ImAvafe/NeoHotbar',
 		creationStamp: 1663646400,
 		bannerSrc: '/src/lib/img/projects/NeoHotbar.png'
 	},
@@ -61,19 +61,11 @@ export const projects: Project[] = [
 		displayName: 'RbxSnips',
 		type: 'resource',
 		platform: 'github',
-		href: 'https://example.com',
+		href: 'https://github.com/imavafe/rbxsnips',
 		creationStamp: 1710993600,
 		bannerSrc: '/src/lib/img/projects/RbxSnips.webp'
 	},
-	{
-		id: 'AvafeMev1',
-		displayName: 'avafe.me v1',
-		type: 'other',
-		platform: 'github',
-		href: 'https://github.com/ImAvafe/imavafe.github.io-v1',
-		creationStamp: 1666065600,
-		bannerSrc: '/src/lib/img/projects/AvafeMe.png'
-	},
+
 	{
 		id: 'AvafeMev2',
 		displayName: 'avafe.me v2',
@@ -100,5 +92,14 @@ export const projects: Project[] = [
 		href: 'https://devforum.roblox.com/t/25-days-of-devcember-day-25/2069708',
 		creationStamp: 1669870800,
 		bannerSrc: '/src/lib/img/projects/Devcember2022.png'
+	},
+	{
+		id: 'AvafeMev1',
+		displayName: 'avafe.me v1',
+		type: 'other',
+		platform: 'github',
+		href: 'https://github.com/ImAvafe/imavafe.github.io-v1',
+		creationStamp: 1666065600,
+		bannerSrc: '/src/lib/img/projects/AvafeMev1.png'
 	}
 ];
