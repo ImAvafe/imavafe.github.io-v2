@@ -20,8 +20,8 @@
 		<span transition:fade  class="overflow-hidden blur-[40vh] absolute top-[-35vh] left-[-35vh] w-[70vh] h-[70vh] rounded-[50%] bg-[#9F84FF60] pointer-events-none" style:transform="translate({mousePosition.x}px, {mousePosition.y}px)"></span>
 	{/if}
 
-  <div class="pl-12 pr-12 w-full flex-col inline-flex justify-center items-center">
-    <span class="bg-[#00000080] pr-24 pl-24">
+  <div class="pl-2 pr-2 w-full flex-col inline-flex justify-center items-center">
+    <span class="bg-[#00000080] pr-2 pl-2">
       <slot />
       <Footer />      
     </span>
