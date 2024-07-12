@@ -1,12 +1,13 @@
-<script>
+<script lang="ts">
   import Logo from "$lib/components/Logo.svelte";
   import SocialLink from "$lib/components/SocialLink.svelte";
+  import profilePicture from "$lib/img/profile-picture.png";
 </script>
 
 <div class="flex-col justify-start items-center gap-4 inline-flex">
   <div class="avatar">
     <div class="w-44 rounded-full">
-      <img src="/src/lib/img/profile-picture.png" alt="Avafe's PFP"/>
+      <img src={profilePicture} alt="Avafe's PFP"/>
     </div>
   </div>
   <div class="w-64 h-24 flex-col justify-start items-center gap-2.5 inline-flex">

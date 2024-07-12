@@ -10,6 +10,17 @@ export type Project = {
 	creationStamp: number;
 };
 
+import poserBanner from '$lib/img/projects/Poser.png';
+import onyxUiBanner from '$lib/img/projects/OnyxUI.png';
+import neoHotbarBanner from '$lib/img/projects/NeoHotbar.png';
+import avafeMeBanner from '$lib/img/projects/AvafeMe.png';
+import avafeMev1Banner from '$lib/img/projects/AvafeMev1.png';
+import climbOfChaosBanner from '$lib/img/projects/ClimbOfChaos.png';
+import kittyDashBanner from '$lib/img/projects/KittyDash.png';
+import rbxSnipsBanner from '$lib/img/projects/RbxSnips.webp';
+import devcember2023Banner from '$lib/img/projects/Devcember2023.png';
+import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
+
 export const projects: Project[] = [
 	{
 		id: 'Poser',
@@ -18,7 +29,7 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/12716101148/',
 		creationStamp: 1678223058,
-		bannerSrc: '/src/lib/img/projects/Poser.png'
+		bannerSrc: poserBanner
 	},
 	{
 		id: 'OnyxUI',
@@ -27,7 +38,7 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/OnyxUI',
 		creationStamp: 1683691200,
-		bannerSrc: '/src/lib/img/projects/OnyxUI.png'
+		bannerSrc: onyxUiBanner
 	},
 	{
 		id: 'NeoHotbar',
@@ -36,7 +47,7 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/NeoHotbar',
 		creationStamp: 1663646400,
-		bannerSrc: '/src/lib/img/projects/NeoHotbar.png'
+		bannerSrc: neoHotbarBanner
 	},
 	{
 		id: 'ClimbOfChaos',
@@ -45,7 +56,7 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/16882394262',
 		creationStamp: 1711425600,
-		bannerSrc: '/src/lib/img/projects/ClimbOfChaos.png'
+		bannerSrc: climbOfChaosBanner
 	},
 	{
 		id: 'KittyDash',
@@ -54,7 +65,7 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/14958801951',
 		creationStamp: 1696305600,
-		bannerSrc: '/src/lib/img/projects/KittyDash.png'
+		bannerSrc: kittyDashBanner
 	},
 	{
 		id: 'RbxSnips',
@@ -63,7 +74,7 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/imavafe/rbxsnips',
 		creationStamp: 1710993600,
-		bannerSrc: '/src/lib/img/projects/RbxSnips.webp'
+		bannerSrc: rbxSnipsBanner
 	},
 
 	{
@@ -73,7 +84,7 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/imavafe.github.io',
 		creationStamp: 1720152000,
-		bannerSrc: '/src/lib/img/projects/AvafeMe.png'
+		bannerSrc: avafeMeBanner
 	},
 	{
 		id: 'Devcember2023',
@@ -82,7 +93,7 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://devcember.org/',
 		creationStamp: 1701406800,
-		bannerSrc: '/src/lib/img/projects/Devcember2023.png'
+		bannerSrc: devcember2023Banner
 	},
 	{
 		id: 'Devcember2022',
@@ -91,7 +102,7 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://devforum.roblox.com/t/25-days-of-devcember-day-25/2069708',
 		creationStamp: 1669870800,
-		bannerSrc: '/src/lib/img/projects/Devcember2022.png'
+		bannerSrc: devcember2022Banner
 	},
 	{
 		id: 'AvafeMev1',
@@ -100,6 +111,6 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/imavafe.github.io-v1',
 		creationStamp: 1666065600,
-		bannerSrc: '/src/lib/img/projects/AvafeMev1.png'
+		bannerSrc: avafeMev1Banner
 	}
 ];
