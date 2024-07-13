@@ -3,6 +3,9 @@
   import Footer from "$lib/sections/Footer.svelte"
   import { fade } from "svelte/transition";
 
+  export const prerender = true;
+  export const trailingSlash = "always";
+
   let mousePosition: {x: number, y: number} | null;
 
 	function mousemove(event: MouseEvent) {
