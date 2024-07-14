@@ -1,7 +1,7 @@
 <script lang="ts">
   import Logo from "$lib/components/Logo.svelte";
   import SocialLink from "$lib/components/SocialLink.svelte";
-  import PFP from "$lib/img/PFP.webp";
+  import PFP from "$lib/img/PFP.png";
 </script>
 
 <div class="flex-col justify-start items-center gap-4 inline-flex">
