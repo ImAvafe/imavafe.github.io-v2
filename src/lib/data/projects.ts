@@ -20,6 +20,7 @@ import kittyDashBanner from '$lib/img/projects/KittyDash.png';
 import rbxSnipsBanner from '$lib/img/projects/RbxSnips.webp';
 import devcember2023Banner from '$lib/img/projects/Devcember2023.png';
 import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
+import scribelBanner from "$lib/img/projects/Scribel.png";
 
 export const projects: Project[] = [
 	{
@@ -39,6 +40,15 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/OnyxUI',
 		creationStamp: 1683691200,
 		bannerSrc: onyxUiBanner
+	},
+	{
+		id: 'Scribel',
+		displayName: 'Scribel',
+		type: 'game',
+		platform: 'roblox',
+		href: 'https://www.roblox.com/games/18609236852',
+		creationStamp: 1724869260,
+		bannerSrc: scribelBanner
 	},
 	{
 		id: 'NeoHotbar',
