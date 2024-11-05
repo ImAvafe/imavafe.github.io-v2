@@ -20,9 +20,19 @@ import kittyDashBanner from '$lib/img/projects/KittyDash.png';
 import rbxSnipsBanner from '$lib/img/projects/RbxSnips.webp';
 import devcember2023Banner from '$lib/img/projects/Devcember2023.png';
 import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
-import scribelBanner from "$lib/img/projects/Scribel.png";
+import scribelBanner from '$lib/img/projects/Scribel.png';
+import RoRoomsBanner from '$lib/img/projects/RoRooms.png';
 
 export const projects: Project[] = [
+	{
+		id: 'RoRooms',
+		displayName: 'RoRooms',
+		type: 'resource',
+		platform: 'website',
+		href: 'https://rorooms.com',
+		creationStamp: 1730832374,
+		bannerSrc: RoRoomsBanner
+	},
 	{
 		id: 'Poser',
 		displayName: 'Poser!',
