@@ -22,6 +22,7 @@ import devcember2023Banner from '$lib/img/projects/Devcember2023.png';
 import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
 import scribelBanner from '$lib/img/projects/Scribel.png';
 import RoRoomsBanner from '$lib/img/projects/RoRooms.png';
+import LonekaBanner from '$lib/img/projects/Loneka.png';
 
 export const projects: Project[] = [
 	{
@@ -32,6 +33,15 @@ export const projects: Project[] = [
 		href: 'https://rorooms.com',
 		creationStamp: 1730832374,
 		bannerSrc: RoRoomsBanner
+	},
+	{
+		id: 'Loneka',
+		displayName: 'Loneka',
+		type: 'other',
+		platform: 'website',
+		href: 'https://loneka.com',
+		creationStamp: 1660708800,
+		bannerSrc: LonekaBanner
 	},
 	{
 		id: 'Poser',
