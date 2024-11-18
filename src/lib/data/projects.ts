@@ -21,18 +21,18 @@ import rbxSnipsBanner from '$lib/img/projects/RbxSnips.webp';
 import devcember2023Banner from '$lib/img/projects/Devcember2023.png';
 import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
 import scribelBanner from '$lib/img/projects/Scribel.png';
-import RoRoomsBanner from '$lib/img/projects/RoRooms.png';
+import RoroomsBanner from '$lib/img/projects/Rorooms.png';
 import LonekaBanner from '$lib/img/projects/Loneka.png';
 
 export const projects: Project[] = [
 	{
-		id: 'RoRooms',
-		displayName: 'RoRooms',
+		id: 'Rorooms',
+		displayName: 'Rorooms',
 		type: 'resource',
 		platform: 'website',
-		href: 'https://rorooms.com',
+		href: 'https://Rorooms.com',
 		creationStamp: 1730832374,
-		bannerSrc: RoRoomsBanner
+		bannerSrc: RoroomsBanner
 	},
 	{
 		id: 'Loneka',
