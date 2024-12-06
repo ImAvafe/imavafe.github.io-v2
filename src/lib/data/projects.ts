@@ -23,6 +23,7 @@ import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
 import scribelBanner from '$lib/img/projects/Scribel.png';
 import RoroomsBanner from '$lib/img/projects/Rorooms.png';
 import LonekaBanner from '$lib/img/projects/Loneka.png';
+import AvalogBanner from '$lib/img/projects/Avalog.png';
 
 export const projects: Project[] = [
 	{
@@ -60,6 +61,15 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/OnyxUI',
 		creationStamp: 1683691200,
 		bannerSrc: onyxUiBanner
+	},
+	{
+		id: 'Avalog',
+		displayName: 'Avalog',
+		type: 'resource',
+		platform: 'github',
+		href: 'https://github.com/ImAvafe/Avalog',
+		creationStamp: 1732640648,
+		bannerSrc: AvalogBanner
 	},
 	{
 		id: 'Scribel',
