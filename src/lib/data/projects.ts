@@ -17,13 +17,13 @@ import avafeMeBanner from '$lib/img/projects/AvafeMe.png';
 import avafeMev1Banner from '$lib/img/projects/AvafeMev1.png';
 import climbOfChaosBanner from '$lib/img/projects/ClimbOfChaos.png';
 import kittyDashBanner from '$lib/img/projects/KittyDash.png';
-import rbxSnipsBanner from '$lib/img/projects/RbxSnips.webp';
 import devcember2023Banner from '$lib/img/projects/Devcember2023.png';
 import devcember2022Banner from '$lib/img/projects/Devcember2022.png';
 import scribelBanner from '$lib/img/projects/Scribel.png';
 import RoroomsBanner from '$lib/img/projects/Rorooms.png';
 import LonekaBanner from '$lib/img/projects/Loneka.png';
 import AvalogBanner from '$lib/img/projects/Avalog.png';
+import MoonletsBanner from '$lib/img/projects/Moonlets.png';
 
 export const projects: Project[] = [
 	{
@@ -108,13 +108,13 @@ export const projects: Project[] = [
 		bannerSrc: kittyDashBanner
 	},
 	{
-		id: 'RbxSnips',
-		displayName: 'RbxSnips',
+		id: 'Moonlets',
+		displayName: 'Moonlets',
 		type: 'resource',
 		platform: 'github',
-		href: 'https://github.com/imavafe/rbxsnips',
+		href: 'https://github.com/imavafe/moonlets',
 		creationStamp: 1710993600,
-		bannerSrc: rbxSnipsBanner
+		bannerSrc: MoonletsBanner
 	},
 
 	{
