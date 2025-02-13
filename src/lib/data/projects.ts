@@ -25,6 +25,7 @@ import LonekaBanner from '$lib/img/projects/Loneka.png';
 import AvalogBanner from '$lib/img/projects/Avalog.png';
 import MoonletsBanner from '$lib/img/projects/Moonlets.png';
 import SayHey2MeBanner from '$lib/img/projects/SayHey2Me.png';
+import FirefightBanner from '$lib/img/projects/Firefight.png';
 
 export const projects: Project[] = [
 	{
@@ -152,6 +153,15 @@ export const projects: Project[] = [
 		href: 'https://devforum.roblox.com/t/25-days-of-devcember-day-25/2069708',
 		creationStamp: 1669870800,
 		bannerSrc: devcember2022Banner
+	},
+	{
+		id: 'Firefight',
+		displayName: 'Firefight',
+		type: 'game',
+		platform: 'github',
+		href: 'https://github.com/ImAvafe/godot-firefight',
+		creationStamp: 1739042007,
+		bannerSrc: FirefightBanner
 	},
 	{
 		id: 'AvafeMev1',
