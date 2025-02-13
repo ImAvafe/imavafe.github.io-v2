@@ -111,7 +111,7 @@ export const projects: Project[] = [
 	},
 	{
 		id: 'AvafeMev2',
-		displayName: 'avafe.me v2',
+		displayName: 'avafe.me',
 		type: 'other',
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/imavafe.github.io',
