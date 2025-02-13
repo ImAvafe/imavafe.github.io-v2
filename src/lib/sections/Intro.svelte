@@ -7,7 +7,7 @@
 	
   onMount(async () => {
     const urlParams = new URLSearchParams(window.location.search)
-    name = urlParams.get('name')
+    name = urlParams.get('n')
   })
 </script>
 
