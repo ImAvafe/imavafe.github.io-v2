@@ -1,6 +1,14 @@
 <script lang="ts">
   import Logo from "$lib/components/Logo.svelte";
   import SocialLink from "$lib/components/SocialLink.svelte";
+	import { onMount } from "svelte";
+
+  let name: string | null
+	
+  onMount(async () => {
+    const urlParams = new URLSearchParams(window.location.search)
+    name = urlParams.get('name')
+  })
 </script>
 
 <div class="flex-col justify-start items-center gap-4 inline-flex">
@@ -9,8 +17,13 @@
       <img src={"https://avatars.githubusercontent.com/u/65048459?v=4"} alt="Avafe's PFP"/>
     </div>
   </div>
-  <div class="w-64 h-24 flex-col justify-start items-center gap-2.5 inline-flex">
-    <Logo/>
+  <div class="w-64 flex-col justify-start items-center gap-5 inline-flex">
+    <span class="flex-col gap-2 inline-flex">
+      <Logo/>
+      {#if (name != null)}
+        <div class="self-stretch text-center text-lg font-medium leading-snug">({name})</div>
+      {/if}
+    </span>
     <div class="w-64 h-24 flex-col justify-start items-center gap-2.5 inline-flex">
       <div class="self-stretch text-center text-white text-lg font-medium leading-snug">Game developer, creator of cool things</div>
     </div>
