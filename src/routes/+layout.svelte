@@ -2,9 +2,14 @@
   import "../app.css";
   import Footer from "$lib/sections/Footer.svelte"
   import { fade } from "svelte/transition";
+  import { onMount } from "svelte";
+	import { altData } from "../stores";
+  import { sha256 } from "js-sha256";
 
   export const prerender = true;
   export const trailingSlash = "always";
+
+  const altDataHash = "d1030c01ecee6ab21a0bfb303164784eb1d9a86f7717be438055112c7dda1d3a"
 
   let mousePosition: {x: number, y: number} | null;
 
@@ -15,6 +20,19 @@
 		  mousePosition = {x:event.clientX-r.left, y:event.clientY-r.top}
     }
 	}
+
+  onMount(async () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const altDataString = urlParams.get('a');
+
+    if (altDataString) {
+      if (sha256(altDataString) === altDataHash) {
+        altData.set(JSON.parse(altDataString));
+      } else {
+        console.error('Data hash mismatch');
+      }
+    }
+  });
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions (background glow is not interactable)> -->

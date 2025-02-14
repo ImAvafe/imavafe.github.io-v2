@@ -1,27 +1,33 @@
 <script lang="ts">
   import Logo from "$lib/components/Logo.svelte";
   import SocialLink from "$lib/components/SocialLink.svelte";
-	import { onMount } from "svelte";
+  import { altData } from "../../stores";
 
-  let name: string | null
-	
-  onMount(async () => {
-    const urlParams = new URLSearchParams(window.location.search)
-    name = urlParams.get('n')
-  })
+  const defaultPfp = "https://avatars.githubusercontent.com/u/65048459?v=4"
+
+  let altOpacity = 1
+  let alreadyHoveredPfp = false
 </script>
 
 <div class="flex-col justify-start items-center gap-4 inline-flex">
   <div class="avatar">
-    <div class="w-44 rounded-full border-[#9F84FF25] border-2">
-      <img src={"https://avatars.githubusercontent.com/u/65048459?v=4"} alt="Avafe's PFP"/>
+    <div class="w-44 rounded-full border-[#9F84FF25]" >
+      <img src={defaultPfp} alt="PFP" class="absolute rounded-full"/>
+      {#if $altData?.altPfp}
+        <img src={$altData?.altPfp} alt="PFP" on:mouseenter={() => {
+          alreadyHoveredPfp = true
+          altOpacity = 0
+        }} on:mouseleave={() => {
+          altOpacity = 1
+        }} class="absolute rounded-full {(alreadyHoveredPfp == false) && "animate-pulse"} z-1" style="opacity: {altOpacity}; transition: opacity 500ms;"/>
+      {/if}
     </div>
   </div>
   <div class="w-64 flex-col justify-start items-center gap-5 inline-flex">
     <span class="flex-col gap-2 inline-flex">
       <Logo/>
-      {#if (name != null)}
-        <div class="self-stretch text-center text-lg font-medium leading-snug">({name})</div>
+      {#if ($altData != null)}
+        <div class="self-stretch text-center text-lg font-medium leading-snug">({($altData.name || "").toLowerCase()})</div>
       {/if}
     </span>
     <div class="w-64 h-24 flex-col justify-start items-center gap-2.5 inline-flex">
