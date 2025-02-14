@@ -23,14 +23,20 @@
 
   onMount(async () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const altDataString = urlParams.get('a');
+    const altDataUrl = urlParams.get('a');
 
-    if (altDataString) {
-      if (sha256(altDataString) === altDataHash) {
-        altData.set(JSON.parse(altDataString));
-      } else {
-        console.error('Data hash mismatch');
-      }
+    if (typeof(altDataUrl) == "string") {
+      fetch(altDataUrl).then((response) => response.json()).then((body) => {
+        const data = body?.record
+
+        if (data) {
+          if (sha256(JSON.stringify(data)) === altDataHash) {
+            altData.set(data);
+          } else {
+            console.error('Data hash mismatch');
+          }
+        }
+      })
     }
   });
 </script>
