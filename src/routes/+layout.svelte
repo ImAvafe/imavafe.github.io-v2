@@ -9,7 +9,7 @@
   export const prerender = true;
   export const trailingSlash = "always";
 
-  const altDataHash = "d1030c01ecee6ab21a0bfb303164784eb1d9a86f7717be438055112c7dda1d3a"
+  const altDataHash = "0cd7a5e2b35b436cd5e3677d6ce9507daa45cd4a6563f0c5cc62fc04f88bf1f6"
 
   let mousePosition: {x: number, y: number} | null;
 
@@ -27,11 +27,9 @@
 
     if (typeof(altDataUrl) == "string") {
       fetch(altDataUrl).then((response) => response.json()).then((body) => {
-        const data = body?.record
-
-        if (data) {
-          if (sha256(JSON.stringify(data)) === altDataHash) {
-            altData.set(data);
+        if (body) {
+          if (sha256(JSON.stringify(body)) === altDataHash) {
+            altData.set(body);
           } else {
             console.error('Data hash mismatch');
           }
