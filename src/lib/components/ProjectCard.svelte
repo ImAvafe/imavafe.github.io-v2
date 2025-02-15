@@ -18,7 +18,6 @@
     <img src={project.bannerSrc} alt="Project thumbnail" class="w-full h-full duration-500 hover:duration-500 hover:scale-105" />
     <span class="absolute bottom-0 left-0 right-0 bg-black/60 p-2 pl-4 pr-4 text-2xl text-white font-medium flex items-center justify-between pointer-events-none">
       <p class="text-xl">{project.displayName}</p><img src={projectIconMap[project.platform]} alt="{project.platform}" class="h-8" />
-      <p>{project.metrics}</p>
     </span>
   </div>
 </a>

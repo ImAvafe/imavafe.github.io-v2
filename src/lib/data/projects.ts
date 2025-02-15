@@ -8,6 +8,7 @@ export type Project = {
 	platform: ProjectPlatform;
 	href: string;
 	creationStamp: number;
+	role: string;
 	metrics?: Array<{
 		name: string;
 		value: string;
@@ -39,7 +40,8 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://Rorooms.com',
 		creationStamp: 1730832374,
-		bannerSrc: RoroomsBanner
+		bannerSrc: RoroomsBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'Loneka',
@@ -49,6 +51,7 @@ export const projects: Project[] = [
 		href: 'https://loneka.com',
 		creationStamp: 1660708800,
 		bannerSrc: LonekaBanner,
+		role: 'Sole developer',
 		metrics: [
 			{
 				name: 'Plays',
@@ -68,6 +71,7 @@ export const projects: Project[] = [
 		href: 'https://www.roblox.com/games/12716101148/',
 		creationStamp: 1678223058,
 		bannerSrc: poserBanner,
+		role: 'Sole developer',
 		metrics: [
 			{
 				name: 'Plays',
@@ -83,6 +87,7 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/OnyxUI',
 		creationStamp: 1683691200,
 		bannerSrc: onyxUiBanner,
+		role: 'Sole developer',
 		metrics: [
 			{
 				name: 'Stars',
@@ -97,7 +102,8 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/Avalog',
 		creationStamp: 1732640648,
-		bannerSrc: AvalogBanner
+		bannerSrc: AvalogBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'Scribel',
@@ -107,6 +113,7 @@ export const projects: Project[] = [
 		href: 'https://www.roblox.com/games/18609236852',
 		creationStamp: 1724869260,
 		bannerSrc: scribelBanner,
+		role: 'Sole developer',
 		metrics: [
 			{
 				name: 'Plays',
@@ -122,6 +129,7 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/NeoHotbar',
 		creationStamp: 1663646400,
 		bannerSrc: neoHotbarBanner,
+		role: 'Sole developer',
 		metrics: [
 			{
 				name: 'Stars',
@@ -136,7 +144,8 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/imavafe/moonlets',
 		creationStamp: 1710993600,
-		bannerSrc: MoonletsBanner
+		bannerSrc: MoonletsBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'KittyDash',
@@ -146,6 +155,7 @@ export const projects: Project[] = [
 		href: 'https://www.roblox.com/games/14958801951',
 		creationStamp: 1696305600,
 		bannerSrc: kittyDashBanner,
+		role: 'Sole developer',
 		metrics: [
 			{
 				name: 'Plays',
@@ -160,7 +170,8 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/imavafe.github.io',
 		creationStamp: 1720152000,
-		bannerSrc: avafeMeBanner
+		bannerSrc: avafeMeBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'SayHey2Me',
@@ -169,7 +180,8 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://sayhey2.me',
 		creationStamp: 1735534800,
-		bannerSrc: SayHey2MeBanner
+		bannerSrc: SayHey2MeBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'ClimbOfChaos',
@@ -178,7 +190,8 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/16882394262',
 		creationStamp: 1711425600,
-		bannerSrc: climbOfChaosBanner
+		bannerSrc: climbOfChaosBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'Devcember2023',
@@ -187,7 +200,8 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://devcember.org/',
 		creationStamp: 1701406800,
-		bannerSrc: devcember2023Banner
+		bannerSrc: devcember2023Banner,
+		role: 'Organizer'
 	},
 	{
 		id: 'Devcember2022',
@@ -196,7 +210,8 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://devforum.roblox.com/t/25-days-of-devcember-day-25/2069708',
 		creationStamp: 1669870800,
-		bannerSrc: devcember2022Banner
+		bannerSrc: devcember2022Banner,
+		role: 'Organizer'
 	},
 	{
 		id: 'Firefight',
@@ -205,7 +220,8 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/godot-firefight',
 		creationStamp: 1739042007,
-		bannerSrc: FirefightBanner
+		bannerSrc: FirefightBanner,
+		role: 'Sole developer'
 	},
 	{
 		id: 'AvafeMev1',
@@ -214,6 +230,7 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/imavafe.github.io-v1',
 		creationStamp: 1666065600,
-		bannerSrc: avafeMev1Banner
+		bannerSrc: avafeMev1Banner,
+		role: 'Sole developer'
 	}
 ];
