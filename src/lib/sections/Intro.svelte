@@ -31,7 +31,7 @@
       {/if}
     </span>
     <div class="w-64 h-24 flex-col justify-start items-center gap-2.5 inline-flex">
-      <div class="self-stretch text-center text-white text-lg font-medium leading-snug">Game developer, creator of cool things</div>
+      <div class="self-stretch text-center text-white text-lg font-medium leading-snug">Game developer, FOSS fanatic</div>
     </div>
   </div>
   <div class="justify-center items-center inline-flex">
