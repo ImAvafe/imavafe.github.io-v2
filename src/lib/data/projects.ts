@@ -8,6 +8,10 @@ export type Project = {
 	platform: ProjectPlatform;
 	href: string;
 	creationStamp: number;
+	metrics?: Array<{
+		name: string;
+		value: string;
+	}>;
 };
 
 import poserBanner from '$lib/img/projects/Poser.png';
@@ -44,7 +48,17 @@ export const projects: Project[] = [
 		platform: 'website',
 		href: 'https://loneka.com',
 		creationStamp: 1660708800,
-		bannerSrc: LonekaBanner
+		bannerSrc: LonekaBanner,
+		metrics: [
+			{
+				name: 'Plays',
+				value: '37M+'
+			},
+			{
+				name: 'Members',
+				value: '100K+'
+			}
+		]
 	},
 	{
 		id: 'Poser',
@@ -53,7 +67,13 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/12716101148/',
 		creationStamp: 1678223058,
-		bannerSrc: poserBanner
+		bannerSrc: poserBanner,
+		metrics: [
+			{
+				name: 'Plays',
+				value: '33M+'
+			}
+		]
 	},
 	{
 		id: 'OnyxUI',
@@ -62,7 +82,13 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/OnyxUI',
 		creationStamp: 1683691200,
-		bannerSrc: onyxUiBanner
+		bannerSrc: onyxUiBanner,
+		metrics: [
+			{
+				name: 'Stars',
+				value: '20+'
+			}
+		]
 	},
 	{
 		id: 'Avalog',
@@ -80,7 +106,13 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/18609236852',
 		creationStamp: 1724869260,
-		bannerSrc: scribelBanner
+		bannerSrc: scribelBanner,
+		metrics: [
+			{
+				name: 'Plays',
+				value: '70K+'
+			}
+		]
 	},
 	{
 		id: 'NeoHotbar',
@@ -89,7 +121,13 @@ export const projects: Project[] = [
 		platform: 'github',
 		href: 'https://github.com/ImAvafe/NeoHotbar',
 		creationStamp: 1663646400,
-		bannerSrc: neoHotbarBanner
+		bannerSrc: neoHotbarBanner,
+		metrics: [
+			{
+				name: 'Stars',
+				value: '15'
+			}
+		]
 	},
 	{
 		id: 'Moonlets',
@@ -107,7 +145,13 @@ export const projects: Project[] = [
 		platform: 'roblox',
 		href: 'https://www.roblox.com/games/14958801951',
 		creationStamp: 1696305600,
-		bannerSrc: kittyDashBanner
+		bannerSrc: kittyDashBanner,
+		metrics: [
+			{
+				name: 'Plays',
+				value: '3M+'
+			}
+		]
 	},
 	{
 		id: 'AvafeMev2',
