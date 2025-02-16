@@ -2,6 +2,8 @@
   import { openProject } from "../../stores";
 
   $: year = new Date(($openProject?.creationStamp || 0) * 1000).getFullYear()
+
+  const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 </script>
 
 <dialog id="project_modal" class="modal modal-bottom sm:modal-middle">
@@ -15,9 +17,9 @@
           <h1 class="text-2xl font-bold">{$openProject?.displayName}</h1>
           <p>{year}, {$openProject?.role}</p>
         </span>
-        <p>{$openProject?.description}</p>
+        <p>{$openProject?.description || loremIpsum}</p>
       </span>
-      <a href="{$openProject?.href}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit</a>
+      <a href="{$openProject?.href}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open</a>
     </span>
   </div>
   <form method="dialog" class="modal-backdrop bg-black/50">

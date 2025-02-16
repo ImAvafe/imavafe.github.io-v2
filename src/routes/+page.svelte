@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-14 flex-col justify-center items-center inline-flex">
-  <div class="max-w-5xl w-96 flex-col justify-center items-center inline-flex">
+  <div class="max-w-6xl w-96 flex-col justify-center items-center inline-flex px-4">
     <Intro />
     <div class="divider pl-10 pr-10"></div>
     <Projects />
