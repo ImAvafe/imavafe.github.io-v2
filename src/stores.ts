@@ -1,3 +1,4 @@
+import type { Project } from '$lib/data/projects';
 import { writable } from 'svelte/store';
 import type { Writable } from 'svelte/store';
 
@@ -9,3 +10,4 @@ export const altData: Writable<{
 	pfp: string | null;
 	altPfp: string | null;
 } | null> = writable(null);
+export const openProject: Writable<Project | null> = writable(null);

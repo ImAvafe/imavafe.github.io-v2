@@ -5,6 +5,7 @@
   import { onMount } from "svelte";
 	import { altData } from "../stores";
   import { sha256 } from "js-sha256";
+  import ProjectModal from "$lib/components/ProjectModal.svelte";
 
   export const prerender = true;
   export const trailingSlash = "always";
@@ -56,26 +57,7 @@
     {@html "local OnyxUI = script.Parent.Parent local Fusion = require(OnyxUI.Parent.Fusion) local EnsureValue = require(OnyxUI.Utils.EnsureValue) local Themer = require(OnyxUI.Utils.Themer) local Colors = require(OnyxUI.Utils.Colors) local PubTypes = require(OnyxUI.Utils.PubTypes) local CombineProps = require(OnyxUI.Utils.CombineProps) local Children = Fusion.Children local Computed = Fusion.Computed local Spring = Fusion.Spring local Image = require(script.Parent.Image) local CanvasGroup = require(script.Parent.CanvasGroup) local Icon = require(script.Parent.Icon) export type Props = Image.Props &amp;amp;amp; { Image: PubTypes.CanBeState&amp;amp;lt;string&amp;amp;gt;?, RingEnabled: PubTypes.CanBeState&amp;amp;lt;boolean&amp;amp;gt;?, RingColor: PubTypes.CanBeState&amp;amp;lt;Color3&amp;amp;gt;?, RingThickness: PubTypes.CanBeState&amp;amp;lt;number&amp;amp;gt;?, IndicatorEnabled: PubTypes.CanBeState&amp;amp;lt;boolean&amp;amp;gt;?, IndicatorColor: PubTypes.CanBeState&amp;amp;lt;Color3&amp;amp;gt;?, IndicatorIcon: PubTypes.CanBeState&amp;amp;lt;string&amp;amp;gt;?, IndicatorIconColor: PubTypes.CanBeState&amp;amp;lt;Color3&amp;amp;gt;?, IndicatorCornerRadius: PubTypes.CanBeState&amp;amp;lt;UDim&amp;amp;gt;?, } return function(Props: Props) local EnsuredProps = { Image = EnsureValue(Props.Image, &amp;amp;quot;string&amp;amp;quot;, nil), RingEnabled = EnsureValue(Props.RingEnabled, &amp;amp;quot;boolean&amp;amp;quot;, false), RingColor = EnsureValue(Props.RingColor, &amp;amp;quot;Color3&amp;amp;quot;, Themer.Theme.Colors.Primary.Main), RingThickness = EnsureValue(Props.RingThickness, &amp;amp;quot;number&amp;amp;quot;, Themer.Theme.StrokeThickness[&amp;amp;quot;2&amp;amp;quot;]), IndicatorEnabled = EnsureValue(Props.IndicatorEnabled, &amp;amp;quot;boolean&amp;amp;quot;, false), IndicatorColor = EnsureValue(Props.IndicatorColor, &amp;amp;quot;Color3&amp;amp;quot;, Themer.Theme.Colors.Primary.Main), IndicatorCornerRadius = EnsureValue( Props.IndicatorCornerRadius, &amp;amp;quot;UDim&amp;amp;quot;, Computed(function() return UDim.new(0, Themer.Theme.CornerRadius.Full:get()) end) ), IndicatorIcon = EnsureValue(Props.IndicatorIcon, &amp;amp;quot;string&amp;amp;quot;, nil), IndicatorIconColor = EnsureValue(Props.IndicatorIconColor, &amp;amp;quot;Color3&amp;amp;quot;, Colors.White), } return Image(CombineProps(Props, { Name = &amp;amp;quot;Avatar&amp;amp;quot;, Image = EnsuredProps.Image, Size = Computed(function() return UDim2.fromOffset(Themer.Theme.TextSize[&amp;amp;quot;4.5&amp;amp;quot;]:get(), Themer.Theme.TextSize[&amp;amp;quot;4.5&amp;amp;quot;]:get()) end), BackgroundColor3 = Themer.Theme.Colors.Neutral.Dark, StrokeEnabled = EnsuredProps.RingEnabled, StrokeColor = Spring(EnsuredProps.RingColor, Themer.Theme.SpringSpeed[&amp;amp;quot;0.5&amp;amp;quot;], Themer.Theme.SpringDampening), StrokeThickness = Spring( EnsuredProps.RingThickness, Themer.Theme.SpringSpeed[&amp;amp;quot;0.5&amp;amp;quot;], Themer.Theme.SpringDampening ), CornerRadius = Computed(function() return UDim.new(0, Themer.Theme.CornerRadius[&amp;amp;quot;1&amp;amp;quot;]:get()) end), [Children] = { Computed(function() if EnsuredProps.IndicatorEnabled:get() then return CanvasGroup { Name = &amp;amp;quot;Indicator&amp;amp;quot;, BackgroundColor3 = Spring( EnsuredProps.IndicatorColor, Themer.Theme.SpringSpeed[&amp;amp;quot;0.5&amp;amp;quot;], Themer.Theme.SpringDampening ), BackgroundTransparency = 0, Size = UDim2.fromScale(0.25, 0.25), AutomaticSize = Enum.AutomaticSize.None, AnchorPoint = Vector2.new(1, 1), Position = UDim2.fromScale(1, 1), AspectRatio = 1, CornerRadius = EnsuredProps.IndicatorCornerRadius, [Children] = { Icon { Image = EnsuredProps.IndicatorIcon, ImageColor3 = EnsuredProps.IndicatorIconColor, ImageTransparency = Computed(function() if EnsuredProps.IndicatorIcon:get() then return 0 else return 1 end end), Size = UDim2.fromScale(1, 1), AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.fromScale(0.5, 0.5), }, }, } else return end end, Fusion.cleanup), }, })) end"}
   </span>
 
-  <dialog id="project_modal" class="modal modal-bottom sm:modal-middle">
-    <div class="modal-box flex flex-col border-primary/20 p-0 border-2">
-      <span class="h-36 overflow-hidden flex items-center">
-        <img src="/src/lib/img/projects/Poser.png" alt="humbnail" class="w-full" />
-      </span>
-      <span class="flex flex-col gap-8 p-4">
-        <span class="flex flex-col gap-5">
-          <span>
-            <h1 class="text-2xl font-bold">Poser!</h1>
-            <p>2023, Sole developer</p>
-          </span>
-          <p>Press ESC key or click the button below to close Press ESC key or click the button below to close Press ESC key or click the button below to close Press ESC key or click the button below to close</p>
-        </span>
-        <a href="https://gaga.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Link</a>
-      </span>
-    </div>
-    <form method="dialog" class="modal-backdrop bg-black/50">
-      <button>Close</button>
-    </form>
-  </dialog>
+  <ProjectModal />
 </div>
 
 <style>
