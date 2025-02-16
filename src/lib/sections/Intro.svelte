@@ -2,6 +2,7 @@
   import Logo from "$lib/components/Logo.svelte";
   import SocialLink from "$lib/components/SocialLink.svelte";
   import { altData } from "../../stores";
+  import Typewriter from "svelte-typewriter";
 
   const defaultPfp = "https://avatars.githubusercontent.com/u/65048459?v=4"
 
@@ -23,15 +24,22 @@
       {/if}
     </div>
   </div>
-  <div class="w-64 flex-col justify-start items-center gap-5 inline-flex">
+  <div class="w-64 flex-col justify-start items-center gap-6 inline-flex">
     <span class="flex-col gap-2 inline-flex">
       <Logo/>
       {#if ($altData != null)}
         <div class="self-stretch text-center text-lg font-medium leading-snug">({($altData.name || "").toLowerCase()})</div>
       {/if}
     </span>
-    <div class="w-64 h-24 flex-col justify-start items-center gap-2.5 inline-flex">
-      <div class="self-stretch text-center text-white text-lg font-medium leading-snug">Game developer, FOSS fanatic</div>
+    <div class="w-64 flex-col justify-start items-center gap-2.5 inline-flex mb-8">
+      <Typewriter mode="loop" cursor={true} interval={50} class="self-stretch text-center text-white text-lg font-medium leading-snug">
+        <p class="font-medium text-lg">Game Developer</p>
+        <p class="font-medium text-lg">FOSS Fanatic</p>
+        <p class="font-medium text-lg">Cat Lover</p>
+        <p class="font-medium text-lg">Programmer</p>
+        <p class="font-medium text-lg">UI Designer</p>
+        <p class="font-medium text-lg">龴ↀ◡ↀ龴</p>
+      </Typewriter>
     </div>
   </div>
   <div class="justify-center items-center inline-flex">

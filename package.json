@@ -13,8 +13,8 @@
 		"deploy": "gh-pages -d build -t true"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^3.0.2",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-static": "^3.0.2",
 		"@sveltejs/enhanced-img": "^0.3.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"js-sha256": "^0.11.0"
+		"js-sha256": "^0.11.0",
+		"svelte-typewriter": "^3.2.3"
 	}
 }
