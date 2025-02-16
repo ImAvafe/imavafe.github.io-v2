@@ -44,7 +44,9 @@ export const projects: Project[] = [
 		creationStamp: 1730832374,
 		bannerSrc: RoroomsBanner,
 		role: 'Sole Developer',
-		displayType: 'Platform'
+		displayType: 'Platform',
+		description:
+			'An all-in-one framework providing worlds with social features and peer-to-peer networking, with the goal of enhancing and uplifting the social genre on Roblox.'
 	},
 	{
 		id: 'Loneka',
@@ -56,6 +58,8 @@ export const projects: Project[] = [
 		bannerSrc: LonekaBanner,
 		role: 'Sole Developer',
 		displayType: 'Studio',
+		description:
+			"A solo studio with the goal of creating engaging social games. While the team of 1 (hi) has stayed small, I'm proud of what I've been able to produce, and the community that has grown around it.",
 		metrics: [
 			{
 				name: 'Plays',
@@ -80,6 +84,8 @@ export const projects: Project[] = [
 		creationStamp: 1678223058,
 		bannerSrc: poserBanner,
 		role: 'Sole Developer',
+		description:
+			'A social deduction party game surrounding two players: one real and one imposter, fighting for crowd approval. Largely developed over the course of 2 months, I gained a lot of experience in producing games.',
 		metrics: [
 			{
 				name: 'Plays',
@@ -105,6 +111,8 @@ export const projects: Project[] = [
 		bannerSrc: onyxUiBanner,
 		role: 'Sole Developer',
 		displayType: 'Software',
+		description:
+			'A set of UI components for Fusion, offering rapid iteration, quality visuals and comprehensive theming. It is used in increasingly influential codebases.',
 		metrics: [
 			{
 				name: 'Stars',
@@ -121,7 +129,9 @@ export const projects: Project[] = [
 		creationStamp: 1732640648,
 		bannerSrc: AvalogBanner,
 		role: 'Sole Developer',
-		displayType: 'Software'
+		displayType: 'Software',
+		description:
+			"An easy-install, heavily customizable avatar catalog for Roblox, with the goal of empowering users' self expression and driving financial growth for developers."
 	},
 	{
 		id: 'Scribel',
@@ -132,6 +142,8 @@ export const projects: Project[] = [
 		creationStamp: 1724869260,
 		bannerSrc: scribelBanner,
 		role: 'Sole Developer',
+		description:
+			'A peaceful social game about writing and talking with others on a floating island. Made over the summer, it reinforced my development experience',
 		metrics: [
 			{
 				name: 'Plays',
@@ -149,6 +161,8 @@ export const projects: Project[] = [
 		bannerSrc: neoHotbarBanner,
 		role: 'Sole Developer',
 		displayType: 'Software',
+		description:
+			"Frustrated with Roblox's aged default hotbar, I made my own prioritizing accessibility and customizability. It has since been used across the platform.",
 		metrics: [
 			{
 				name: 'Stars',
@@ -165,7 +179,9 @@ export const projects: Project[] = [
 		creationStamp: 1710993600,
 		bannerSrc: MoonletsBanner,
 		role: 'Sole Developer',
-		displayType: 'Software'
+		displayType: 'Software',
+		description:
+			'A collection of unopinionated utility modules for Roblox, with the goal of making various patterns easier to implement and more reusable.'
 	},
 	{
 		id: 'KittyDash',
@@ -176,6 +192,8 @@ export const projects: Project[] = [
 		creationStamp: 1696305600,
 		bannerSrc: kittyDashBanner,
 		role: 'Sole Developer',
+		description:
+			'A small platformer I whipped up to experiment with the more artistic side of game development. A fun side-project.',
 		metrics: [
 			{
 				name: 'Plays',
@@ -200,7 +218,9 @@ export const projects: Project[] = [
 		creationStamp: 1720152000,
 		bannerSrc: avafeMeBanner,
 		role: 'Sole Developer',
-		displayType: 'Website'
+		displayType: 'Website',
+		description:
+			'The 2nd iteration of my personal website, made in Svelte, TailwindCSS and DaisyUI. I learned a lot about the frontend web ecosystem with this week-long project. Updated regularly since.'
 	},
 	{
 		id: 'SayHey2Me',
@@ -211,7 +231,9 @@ export const projects: Project[] = [
 		creationStamp: 1735534800,
 		bannerSrc: SayHey2MeBanner,
 		role: 'Sole Developer',
-		displayType: 'Website'
+		displayType: 'Website',
+		description:
+			'A cute little link-in-bio website made to encourage the simple act of greeting one another. Made in vanilla JS, HTML and CSS.'
 	},
 	{
 		id: 'ClimbOfChaos',
@@ -221,7 +243,14 @@ export const projects: Project[] = [
 		href: 'https://www.roblox.com/games/16882394262',
 		creationStamp: 1711425600,
 		bannerSrc: climbOfChaosBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		description: `A chaotic game where you compete against others to reach the top of a mountain. Largely underdeveloped, it still has a way to go. Some children just aren't your favorite.`,
+		metrics: [
+			{
+				name: 'Plays',
+				value: '56K'
+			}
+		]
 	},
 	{
 		id: 'Devcember2023',
@@ -231,8 +260,19 @@ export const projects: Project[] = [
 		href: 'https://devcember.org/',
 		creationStamp: 1701406800,
 		bannerSrc: devcember2023Banner,
-		role: 'Organizer',
-		displayType: 'Event'
+		role: 'Sole Organizer',
+		displayType: 'Event',
+		description: `A month-long community challenge encouraging the practice of art and design in game development. It was awesome seeing everyone's creations, and the small community that formed around it all.`,
+		metrics: [
+			{
+				name: 'Members',
+				value: '113'
+			},
+			{
+				name: 'Submissions 👌',
+				value: '69'
+			}
+		]
 	},
 	{
 		id: 'Devcember2022',
@@ -242,8 +282,9 @@ export const projects: Project[] = [
 		href: 'https://devforum.roblox.com/t/25-days-of-devcember-day-25/2069708',
 		creationStamp: 1669870800,
 		bannerSrc: devcember2022Banner,
-		role: 'Organizer',
-		displayType: 'Event'
+		role: 'Participant',
+		displayType: 'Event',
+		description: `A month-long personal challenge to improve my 3D modeling skills. Over the course of December, I learned a lot about Blender and presentation. A few others even joined along!`
 	},
 	{
 		id: 'Firefight',
@@ -253,7 +294,9 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/godot-firefight',
 		creationStamp: 1739042007,
 		bannerSrc: FirefightBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		description:
+			"My first Godot project; a simple game where you try to save your forest from an ever-intensifying fire. Made in 2 days with a foreign game engine, the codebase naturally isn't perfect. Nonetheless, I'm proud of the result, and I learned a lot along the way."
 	},
 	{
 		id: 'AvafeMev1',
@@ -264,6 +307,8 @@ export const projects: Project[] = [
 		creationStamp: 1666065600,
 		bannerSrc: avafeMev1Banner,
 		role: 'Sole Developer',
-		displayType: 'Website'
+		displayType: 'Website',
+		description:
+			'My first proper website, made in vanilla JS, HTML and CSS. While ultimately superseded, it served me well during its time.'
 	}
 ];

@@ -14,15 +14,14 @@
       <img src="{$openProject?.bannerSrc}" alt="Thumbnail" class="w-full" />
     </span>
     <span class="flex flex-col gap-8 p-4">
-      <span class="flex flex-col gap-5">
+      <span class="flex flex-col gap-4">
         <span>
           <h1 class="text-3xl font-bold">{$openProject?.displayName}</h1>
-          <p class="text-lg">{type}, {year}, {$openProject?.role}</p>
+          <p class="text-lg">{type} • {year} • {$openProject?.role}</p>
         </span>
         <p>{$openProject?.description || loremIpsum}</p>
-        
           {#if $openProject?.metrics != null}
-            <span class="py-2">
+            <span class="py-4">
               <MetricRow metrics={$openProject?.metrics} />
             </span>
           {/if}
