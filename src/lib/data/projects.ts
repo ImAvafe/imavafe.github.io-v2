@@ -10,6 +10,7 @@ export type Project = {
 	creationStamp: number;
 	role: string;
 	description?: string;
+	displayType?: string;
 	metrics?: Array<{
 		name: string;
 		value: string;
@@ -42,7 +43,8 @@ export const projects: Project[] = [
 		href: 'https://Rorooms.com',
 		creationStamp: 1730832374,
 		bannerSrc: RoroomsBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		displayType: 'Platform'
 	},
 	{
 		id: 'Loneka',
@@ -53,14 +55,19 @@ export const projects: Project[] = [
 		creationStamp: 1660708800,
 		bannerSrc: LonekaBanner,
 		role: 'Sole Developer',
+		displayType: 'Studio',
 		metrics: [
 			{
 				name: 'Plays',
-				value: '37M+'
+				value: '37M'
+			},
+			{
+				name: 'Hours',
+				value: '6.4M'
 			},
 			{
 				name: 'Members',
-				value: '100K+'
+				value: '100K'
 			}
 		]
 	},
@@ -76,7 +83,15 @@ export const projects: Project[] = [
 		metrics: [
 			{
 				name: 'Plays',
-				value: '33M+'
+				value: '33M'
+			},
+			{
+				name: 'Hours',
+				value: '6M'
+			},
+			{
+				name: 'Favs.',
+				value: '104K'
 			}
 		]
 	},
@@ -89,10 +104,11 @@ export const projects: Project[] = [
 		creationStamp: 1683691200,
 		bannerSrc: onyxUiBanner,
 		role: 'Sole Developer',
+		displayType: 'Software',
 		metrics: [
 			{
 				name: 'Stars',
-				value: '20+'
+				value: '20'
 			}
 		]
 	},
@@ -104,7 +120,8 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/Avalog',
 		creationStamp: 1732640648,
 		bannerSrc: AvalogBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		displayType: 'Software'
 	},
 	{
 		id: 'Scribel',
@@ -118,7 +135,7 @@ export const projects: Project[] = [
 		metrics: [
 			{
 				name: 'Plays',
-				value: '70K+'
+				value: '70K'
 			}
 		]
 	},
@@ -131,6 +148,7 @@ export const projects: Project[] = [
 		creationStamp: 1663646400,
 		bannerSrc: neoHotbarBanner,
 		role: 'Sole Developer',
+		displayType: 'Software',
 		metrics: [
 			{
 				name: 'Stars',
@@ -146,7 +164,8 @@ export const projects: Project[] = [
 		href: 'https://github.com/imavafe/moonlets',
 		creationStamp: 1710993600,
 		bannerSrc: MoonletsBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		displayType: 'Software'
 	},
 	{
 		id: 'KittyDash',
@@ -160,7 +179,15 @@ export const projects: Project[] = [
 		metrics: [
 			{
 				name: 'Plays',
-				value: '3M+'
+				value: '3M'
+			},
+			{
+				name: 'Hours',
+				value: '357K'
+			},
+			{
+				name: 'Favs.',
+				value: '21K'
 			}
 		]
 	},
@@ -172,7 +199,8 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/imavafe.github.io',
 		creationStamp: 1720152000,
 		bannerSrc: avafeMeBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		displayType: 'Website'
 	},
 	{
 		id: 'SayHey2Me',
@@ -182,7 +210,8 @@ export const projects: Project[] = [
 		href: 'https://sayhey2.me',
 		creationStamp: 1735534800,
 		bannerSrc: SayHey2MeBanner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		displayType: 'Website'
 	},
 	{
 		id: 'ClimbOfChaos',
@@ -202,7 +231,8 @@ export const projects: Project[] = [
 		href: 'https://devcember.org/',
 		creationStamp: 1701406800,
 		bannerSrc: devcember2023Banner,
-		role: 'Organizer'
+		role: 'Organizer',
+		displayType: 'Event'
 	},
 	{
 		id: 'Devcember2022',
@@ -212,7 +242,8 @@ export const projects: Project[] = [
 		href: 'https://devforum.roblox.com/t/25-days-of-devcember-day-25/2069708',
 		creationStamp: 1669870800,
 		bannerSrc: devcember2022Banner,
-		role: 'Organizer'
+		role: 'Organizer',
+		displayType: 'Event'
 	},
 	{
 		id: 'Firefight',
@@ -232,6 +263,7 @@ export const projects: Project[] = [
 		href: 'https://github.com/ImAvafe/imavafe.github.io-v1',
 		creationStamp: 1666065600,
 		bannerSrc: avafeMev1Banner,
-		role: 'Sole Developer'
+		role: 'Sole Developer',
+		displayType: 'Website'
 	}
 ];

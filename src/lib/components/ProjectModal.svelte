@@ -1,7 +1,9 @@
 <script>
   import { openProject } from "../../stores";
+  import MetricRow from "./MetricRow.svelte";
 
   $: year = new Date(($openProject?.creationStamp || 0) * 1000).getFullYear()
+  $: type = String($openProject?.displayType || $openProject?.type).charAt(0).toUpperCase() + String($openProject?.displayType || $openProject?.type).slice(1);
 
   const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 </script>
@@ -14,10 +16,16 @@
     <span class="flex flex-col gap-8 p-4">
       <span class="flex flex-col gap-5">
         <span>
-          <h1 class="text-2xl font-bold">{$openProject?.displayName}</h1>
-          <p>{year}, {$openProject?.role}</p>
+          <h1 class="text-3xl font-bold">{$openProject?.displayName}</h1>
+          <p class="text-lg">{type}, {year}, {$openProject?.role}</p>
         </span>
         <p>{$openProject?.description || loremIpsum}</p>
+        
+          {#if $openProject?.metrics != null}
+            <span class="py-2">
+              <MetricRow metrics={$openProject?.metrics} />
+            </span>
+          {/if}
       </span>
       <a href="{$openProject?.href}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open</a>
     </span>
