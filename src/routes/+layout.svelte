@@ -6,6 +6,7 @@
 	import { altData } from "../stores";
   import { sha256 } from "js-sha256";
   import ProjectModal from "$lib/components/ProjectModal.svelte";
+  import InfoModal from "$lib/components/InfoModal.svelte";
 
   export const prerender = true;
   export const trailingSlash = "always";
@@ -58,6 +59,7 @@
   </span>
 
   <ProjectModal />
+  <InfoModal />
 </div>
 
 <style>

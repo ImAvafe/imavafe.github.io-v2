@@ -1,8 +1,9 @@
 <script>
-  export let href = "https://example.com";
+  export let href = "";
+  export let onClick = () => {};
 </script>
 
-<a role="button" href={href} target="_blank" rel="noopener noreferrer" class="btn btn-link btn-square btn-lg">
+<a on:click={onClick} role="button" href={href} target="_blank" rel="noopener noreferrer" class="btn btn-link btn-square btn-lg">
   <slot />
 </a>
 

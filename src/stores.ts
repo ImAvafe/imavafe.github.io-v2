@@ -11,3 +11,4 @@ export const altData: Writable<{
 	altPfp: string | null;
 } | null> = writable(null);
 export const openProject: Writable<Project | null> = writable(null);
+export const modalMessage: Writable<string | null> = writable(null);
