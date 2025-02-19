@@ -4,10 +4,10 @@
 
 <div class="my-16 flex flex-col items-center gap-14">
   <h2 class="font-bold text-3xl text-center">
-    Something pique your interest..?
+    Something pique your interest?
   </h2>
   <span class="cl-effect-1">
-    <a on:click={openDiscordDms} role="button" href="" class="text-primary text-2xl cursor-pointer">Let's chat</a>
+    <a on:click={openDiscordDms} role="button" href="#projects" class="text-primary text-2xl cursor-pointer">Let's chat</a>
   </span>
 </div>
 
