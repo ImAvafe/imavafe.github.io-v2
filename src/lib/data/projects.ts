@@ -142,6 +142,32 @@ export const projects: Project[] = [
 			"An easy-install, heavily customizable avatar catalog for Roblox, with the goal of empowering users' self expression and driving financial growth for developers."
 	},
 	{
+		id: 'KittyDash',
+		displayName: 'Kitty Dash',
+		type: 'game',
+		platform: 'roblox',
+		href: 'https://www.roblox.com/games/14958801951',
+		creationStamp: 1696305600,
+		bannerSrc: kittyDashBanner,
+		role: 'Sole Developer',
+		description:
+			'A small platformer I whipped up to experiment with the more artistic side of game development. A fun side-project.',
+		metrics: [
+			{
+				name: 'Plays',
+				value: '3M'
+			},
+			{
+				name: 'Hours',
+				value: '357K'
+			},
+			{
+				name: 'Favs.',
+				value: '21K'
+			}
+		]
+	},
+	{
 		id: 'Moonlets',
 		displayName: 'Moonlets',
 		type: 'resource',
@@ -173,32 +199,6 @@ export const projects: Project[] = [
 			{
 				name: 'Visits',
 				value: '85K'
-			}
-		]
-	},
-	{
-		id: 'KittyDash',
-		displayName: 'Kitty Dash',
-		type: 'game',
-		platform: 'roblox',
-		href: 'https://www.roblox.com/games/14958801951',
-		creationStamp: 1696305600,
-		bannerSrc: kittyDashBanner,
-		role: 'Sole Developer',
-		description:
-			'A small platformer I whipped up to experiment with the more artistic side of game development. A fun side-project.',
-		metrics: [
-			{
-				name: 'Plays',
-				value: '3M'
-			},
-			{
-				name: 'Hours',
-				value: '357K'
-			},
-			{
-				name: 'Favs.',
-				value: '21K'
 			}
 		]
 	},
