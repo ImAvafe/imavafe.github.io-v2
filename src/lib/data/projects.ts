@@ -78,7 +78,7 @@ export const projects: Project[] = [
 			'A suite of tools accelerating game development. Focused on design, patterns, and developer experience, its software is loved by creators big and small.',
 		metrics: [
 			{
-				name: 'New Devs / Month',
+				name: 'Saves / Month',
 				value: '343'
 			}
 		]
