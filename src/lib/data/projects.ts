@@ -52,15 +52,15 @@ export const projects: Project[] = [
 		metrics: [
 			{
 				name: 'Plays',
-				value: '37M'
+				value: '39M'
 			},
 			{
 				name: 'Hours',
-				value: '6.4M'
+				value: '6.7M'
 			},
 			{
 				name: 'Members',
-				value: '100K'
+				value: '105K'
 			}
 		]
 	},
@@ -97,15 +97,15 @@ export const projects: Project[] = [
 		metrics: [
 			{
 				name: 'Plays',
-				value: '33M'
+				value: '35M'
 			},
 			{
 				name: 'Hours',
-				value: '6M'
+				value: '6.1M'
 			},
 			{
 				name: 'Favs.',
-				value: '104K'
+				value: '106K'
 			}
 		]
 	},
@@ -175,11 +175,11 @@ export const projects: Project[] = [
 		metrics: [
 			{
 				name: 'Plays',
-				value: '3M'
+				value: '3.9M'
 			},
 			{
 				name: 'Hours',
-				value: '357K'
+				value: '370K'
 			},
 			{
 				name: 'Favs.',
