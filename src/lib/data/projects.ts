@@ -34,21 +34,9 @@ import MoonletsBanner from '$lib/img/projects/Moonlets.png';
 import SayHey2MeBanner from '$lib/img/projects/SayHey2Me.png';
 import FirefightBanner from '$lib/img/projects/Firefight.png';
 import LonekaRooms from '$lib/img/projects/LonekaRooms.png';
+import LonekaSuite from '$lib/img/projects/LonekaSuite.png';
 
 export const projects: Project[] = [
-	{
-		id: 'Rorooms',
-		displayName: 'Rorooms',
-		type: 'resource',
-		platform: 'website',
-		href: 'https://Rorooms.com',
-		creationStamp: 1730832374,
-		bannerSrc: RoroomsBanner,
-		role: 'Sole Developer',
-		displayType: 'Platform',
-		description:
-			'An all-in-one framework providing worlds with social features and peer-to-peer networking, with the goal of enhancing and uplifting the social genre on Roblox.'
-	},
 	{
 		id: 'Loneka',
 		displayName: 'Loneka',
@@ -60,7 +48,7 @@ export const projects: Project[] = [
 		role: 'Sole Developer',
 		displayType: 'Studio',
 		description:
-			"A solo studio with the goal of creating engaging social games. While the team of 1 (hi) has stayed small, I'm proud of what I've been able to produce, and the community that has grown around it.",
+			"A solo studio creating engaging social games. While the team of 1 (hi) has stayed small, I'm proud of what's been produced, and the community that's grown around it.",
 		metrics: [
 			{
 				name: 'Plays',
@@ -73,6 +61,25 @@ export const projects: Project[] = [
 			{
 				name: 'Members',
 				value: '100K'
+			}
+		]
+	},
+	{
+		id: 'LonekaSuite',
+		displayName: 'Loneka Suite',
+		type: 'other',
+		platform: 'website',
+		href: 'https://suite.loneka.com',
+		creationStamp: 1744213216,
+		bannerSrc: LonekaSuite,
+		role: 'Sole Developer',
+		displayType: 'Branch',
+		description:
+			'A suite of tools accelerating game development. Focused on design, patterns, and developer experience, its software is loved by creators big and small.',
+		metrics: [
+			{
+				name: 'New Devs / Month',
+				value: '343'
 			}
 		]
 	},
@@ -103,6 +110,19 @@ export const projects: Project[] = [
 		]
 	},
 	{
+		id: 'Rorooms',
+		displayName: 'Rorooms',
+		type: 'resource',
+		platform: 'website',
+		href: 'https://Rorooms.com',
+		creationStamp: 1730832374,
+		bannerSrc: RoroomsBanner,
+		role: 'Sole Developer',
+		displayType: 'Platform',
+		description:
+			'An all-in-one framework providing worlds with social features and peer-to-peer networking, with the goal of enhancing and uplifting the social genre on Roblox.'
+	},
+	{
 		id: 'OnyxUI',
 		displayName: 'OnyxUI',
 		type: 'resource',
@@ -126,7 +146,7 @@ export const projects: Project[] = [
 		role: 'Sole Developer',
 		displayType: 'Software',
 		description:
-			"Frustrated with Roblox's aged default hotbar, I made my own prioritizing accessibility and customizability. It has since been used across the platform."
+			"A replacement for Roblox's aged default hotbar, NeoHotbar prioritizes accessibility and customizability, improving upon where Roblox left off. It's used across the platform."
 	},
 	{
 		id: 'Avalog',
