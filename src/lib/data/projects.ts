@@ -175,7 +175,7 @@ export const projects: Project[] = [
 		bannerSrc: kittyDashBanner,
 		role: 'Sole Developer',
 		description:
-			'A small platformer I whipped up to experiment with the more artistic side of game development. A fun side-project.',
+			'A short platformer I made to experiment with the more artistic side of game development.',
 		metrics: [
 			{
 				name: 'Plays',
