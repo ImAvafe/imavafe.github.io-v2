@@ -59,7 +59,7 @@ export const projects: Project[] = [
 				value: '6.7M'
 			},
 			{
-				name: 'Members',
+				name: 'Community Members',
 				value: '105K'
 			}
 		]
@@ -78,8 +78,12 @@ export const projects: Project[] = [
 			'A suite of tools accelerating game development. Focused on design, patterns, and developer experience, its software is loved by creators big and small.',
 		metrics: [
 			{
-				name: 'Saves / Month',
-				value: '343'
+				name: 'New Users / mo.',
+				value: '340+'
+			},
+			{
+				name: 'Community Members',
+				value: '135'
 			}
 		]
 	},
