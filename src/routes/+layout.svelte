@@ -11,7 +11,7 @@
   export const prerender = true;
   export const trailingSlash = "always";
 
-  const altDataHash = "0cd7a5e2b35b436cd5e3677d6ce9507daa45cd4a6563f0c5cc62fc04f88bf1f6"
+  const altDataHash = "a5f2e0d0fea4e771c6d8005ff6bbad808b5ed995fa340936e4c4252f8fe1236b"
 
   let mousePosition: {x: number, y: number} | null;
 
