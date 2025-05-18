@@ -48,14 +48,14 @@ export const projects: Project[] = [
 		role: 'Sole Developer',
 		displayType: 'Studio',
 		description:
-			"A solo studio creating engaging social games. While the team of 1 (hi) has stayed small, I'm proud of what's been produced, and the community that's grown around it.",
+			"A solo studio creating engaging social games and software. While the team of 1 (hi) has stayed small, I'm proud of what's been produced, and the community that's grown around it.",
 		metrics: [
 			{
-				name: 'Plays',
+				name: 'Play Sessions',
 				value: '39M'
 			},
 			{
-				name: 'Hours',
+				name: 'Total Hours',
 				value: '6.7M'
 			},
 			{
@@ -75,15 +75,11 @@ export const projects: Project[] = [
 		role: 'Sole Developer',
 		displayType: 'Branch',
 		description:
-			'A suite of tools accelerating game development. Focused on design, patterns, and developer experience, its software is loved by creators big and small.',
+			'A suite of tools accelerating game development. Focused on design patterns and developer experience, its software is loved by creators big and small.',
 		metrics: [
 			{
-				name: 'New Users / mo.',
+				name: 'New Devs / mo.',
 				value: '340+'
-			},
-			{
-				name: 'Community Members',
-				value: '135'
 			}
 		]
 	},
@@ -100,15 +96,15 @@ export const projects: Project[] = [
 			'A social deduction party game surrounding two players: one real and one imposter, fighting for crowd approval. Largely developed over the course of 2 months, I rapidly gained experience producing games.',
 		metrics: [
 			{
-				name: 'Plays',
+				name: 'Play Sessions',
 				value: '35M'
 			},
 			{
-				name: 'Hours',
+				name: 'Total Hours',
 				value: '6.1M'
 			},
 			{
-				name: 'Favs.',
+				name: 'Favorites',
 				value: '106K'
 			}
 		]
@@ -178,15 +174,15 @@ export const projects: Project[] = [
 			'A short platformer I made to experiment with the more artistic side of game development.',
 		metrics: [
 			{
-				name: 'Plays',
+				name: 'Play Sessions',
 				value: '3.9M'
 			},
 			{
-				name: 'Hours',
+				name: 'Total Hours',
 				value: '370K'
 			},
 			{
-				name: 'Favs.',
+				name: 'Favorites',
 				value: '21K'
 			}
 		]
@@ -202,7 +198,7 @@ export const projects: Project[] = [
 		role: 'Sole Developer',
 		displayType: 'Software',
 		description:
-			'A collection of unopinionated utility modules for Roblox, with the goal of making various patterns easier to implement and more reusable.'
+			'A collection of unopinionated utility modules for Roblox, making various patterns easier to implement and more reusable.'
 	},
 	{
 		id: 'LonekaRooms',
@@ -239,12 +235,12 @@ export const projects: Project[] = [
 		description: `A month-long community challenge encouraging the practice of art and design in game development. It was awesome seeing everyone's creations, and the small community that formed around it all.`,
 		metrics: [
 			{
-				name: 'Members',
-				value: '113'
-			},
-			{
 				name: 'Submissions 👌',
 				value: '69'
+			},
+			{
+				name: 'Community Members',
+				value: '113'
 			}
 		]
 	},
@@ -273,11 +269,11 @@ export const projects: Project[] = [
 			'A peaceful social game about writing and talking with others on a floating island. Made over the summer, it reinforced my game development experience.',
 		metrics: [
 			{
-				name: 'Plays',
+				name: 'Play Sessions',
 				value: '70K'
 			},
 			{
-				name: 'Hours',
+				name: 'Total Hours',
 				value: '4.9K'
 			}
 		]
@@ -319,11 +315,11 @@ export const projects: Project[] = [
 		description: `A chaotic game where you compete against others to reach the top of a mountain. Largely underdeveloped, it still has a way to go. Some children just aren't your favorite.`,
 		metrics: [
 			{
-				name: 'Plays',
+				name: 'Play Sessions',
 				value: '56K'
 			},
 			{
-				name: 'Hours',
+				name: 'Total Hours',
 				value: '2.8K'
 			}
 		]
