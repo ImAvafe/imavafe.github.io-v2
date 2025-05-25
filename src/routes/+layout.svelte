@@ -43,7 +43,7 @@
 </script>
 
 <div class="py-24 flex-col justify-center items-center w-full inline-flex">
-  <div class="max-w-6xl gap-4 w-96 flex-col justify-center items-center inline-flex px-4">
+  <div class="max-w-lg w-full gap-4 flex-col justify-center items-center inline-flex px-4">
     <Navbar />
     <slot />
   </div>

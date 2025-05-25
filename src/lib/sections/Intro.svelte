@@ -11,7 +11,7 @@
   let alreadyHoveredPfp = false
 </script>
 
-<div class="flex-col justify-start items-center gap-4 inline-flex">
+<div class="my-8 flex-col justify-start items-center gap-2 inline-flex">
   <div class="avatar">
     <div class="w-44 rounded-full border-[#9F84FF25]" >
       <img src={defaultPfp} alt="PFP" class="absolute rounded-full"/>
