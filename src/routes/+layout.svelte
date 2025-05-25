@@ -7,6 +7,7 @@
   import { sha256 } from "js-sha256";
   import ProjectModal from "$lib/components/ProjectModal.svelte";
   import InfoModal from "$lib/components/InfoModal.svelte";
+	import Navbar from "$lib/components/Navbar.svelte";
 
   export const prerender = true;
   export const trailingSlash = "always";
@@ -41,8 +42,9 @@
   });
 </script>
 
-<div class="py-32 flex-col justify-center items-center w-full inline-flex">
+<div class="py-24 flex-col justify-center items-center w-full inline-flex">
   <div class="max-w-6xl gap-4 w-96 flex-col justify-center items-center inline-flex px-4">
+    <Navbar />
     <slot />
   </div>
 </div>
@@ -63,6 +65,7 @@
 
 <style>
   :global(::selection) {
+    color: white;
     background-color: #7b57ff;
   }
 </style>
