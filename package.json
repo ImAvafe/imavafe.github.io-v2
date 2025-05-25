@@ -18,6 +18,7 @@
 		"@sveltejs/enhanced-img": "^0.3.10",
 		"@sveltejs/kit": "^2.20.5",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
+		"@tailwindcss/typography": "^0.5.16",
 		"@types/eslint": "^8.56.12",
 		"autoprefixer": "^10.4.21",
 		"daisyui": "^4.12.24",

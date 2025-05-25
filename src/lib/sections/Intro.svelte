@@ -38,8 +38,8 @@
         <p class="font-medium text-lg">FOSS Fanatic</p>
         <p class="font-medium text-lg">Cat Lover</p>
         <p class="font-medium text-lg">Programmer</p>
-        <p class="font-medium text-lg">UI Designer</p>
-        <p class="font-medium text-lg">龴ↀ◡ↀ龴</p>
+        <p class="font-medium text-lg">Designer</p>
+        <p class="font-medium text-lg">龴LONEKA龴</p>
       </Typewriter>
     </div>
   </div>
