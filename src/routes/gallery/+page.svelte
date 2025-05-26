@@ -16,22 +16,21 @@
   let fullscreen = false;
 </script>
 
-<div class="flex flex-col items-center gap-10">
-  <article class="prose text-center">
-    <p>They would be chronological and zoomable if I cared enough. Unfortunately, I just don't.</p>
-  </article>
-  <div class="w-full flex flex-col gap-4">
-    <span class="flex flex-row gap-2">
-      <button on:click={() => {
-        console.log(!fullscreen)
-        fullscreen = !fullscreen;
-      }} class="btn flex-grow">Zoom</button>
-      <button on:click={() => {
-        shownPhotos = shuffle(photos);
-      }} class="btn flex-grow">Shuffle</button>
-    </span>
-  </div>
-</div>
+<span class="w-full flex flex-row gap-2">
+  <button
+    on:click={() => {
+      console.log(!fullscreen)
+      fullscreen = !fullscreen;
+    }} class="btn flex-grow">
+    Zoom
+  </button>
+  <button
+    on:click={() => {
+      shownPhotos = shuffle(photos);
+    }} class="btn flex-grow">
+    Shuffle
+  </button>
+</span>
 <div class="{fullscreen ? "max-w-6xl rounded-3xl" : "max-w-full"} w-screen overflow-hidden transition-all duration-500">
   <Gallery images={shownPhotos} gutter={12} imageComponent={Photo} />
 </div>
