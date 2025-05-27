@@ -12,7 +12,7 @@
     <p>I was first exposed to tech in the family barn, growing up alongside CLI scripts, HTML, archaic operating systems, circuitry, and good old heavy machinery. 🚜🤠</p>
     <p>Fast-forward several years, I'd fallen in love with video games, and I was suddenly in need of money. Nowadays, work is much more a willing passion for me, and I get excited to sit down and make things.</p>
     <p>I've also recently thrown myself down the academic pipeline, and many of my work hours now go toward preparing for university.</p>
-    <p>When I'm not working or studying, my hobbies include hanging with others, thinking, reading, and of course, playing games—especially the first two.</p>
+    <p>When I'm not working or studying, my hobbies include hanging with others, thinking, reading, and of course, playing games—but especially the first two.</p>
     <br />
 
     <h1>Tools</h1>
