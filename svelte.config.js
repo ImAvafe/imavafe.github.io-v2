@@ -9,14 +9,11 @@ const config = {
 	preprocess: [
 		vitePreprocess(),
 		mdsvex({
-			extensions: ['.md'],
-			// layout: {
-			// 	blog: 'src/routes/blog/post.svelte'
-			// }
+			extensions: ['.md', '.svx'],
 		})
 	],
 
-	extensions: ['.svelte', '.md'],
+	extensions: ['.svelte', '.md', '.svx'],
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
