@@ -4,8 +4,7 @@
   import { altData } from "../../stores";
   import Typewriter from "svelte-typewriter";
   import { openDiscordDms } from "$lib/openDiscordDms";
-
-  const defaultPfp = "https://avatars.githubusercontent.com/u/65048459?v=4"
+  import defaultPfp from "$lib/img/ProfilePicture.png";
 
   let altOpacity = 1
   let alreadyHoveredPfp = false
