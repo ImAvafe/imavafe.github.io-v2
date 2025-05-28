@@ -10,7 +10,7 @@
     <PageLink title="about" href="/" />
     <PageLink title="projects" href="/projects/" />
     <PageLink title="gallery" href="/gallery/" />
-    <PageLink title="blog" href="/blog/"/>
+    <PageLink title="blog" href="https://avafe.substack.com" newTab={true}/>
   </span>
   <span class="text-white">🡱</span>
 </button>
