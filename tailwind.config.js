@@ -1,4 +1,5 @@
 import daisyui from "daisyui"
+import typography from "@tailwindcss/typography"
 import themes from "daisyui/src/theming/themes"
 import defaultTheme from "tailwindcss/defaultTheme"
 
@@ -13,10 +14,26 @@ export default {
       },
       colors: {
         primary: '#9F84FF',
-      }
+      },
+      typography: () => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              'font-size': '2rem',
+            },
+            h2: {
+              'font-size': '1.8rem',
+            },
+            h3: {
+              'font-size': '1.4rem',
+            },
+          },
+        },
+      })
     },
   },
   plugins: [
+    typography,
     daisyui,
   ],
   daisyui: {

@@ -19,7 +19,7 @@
           <h1 class="text-3xl font-bold">{$openProject?.displayName}</h1>
           <p class="text-lg">{type} • {year} • {$openProject?.role}</p>
         </span>
-        <p>{$openProject?.description || loremIpsum}</p>
+        <article class="prose">{$openProject?.description || loremIpsum}</article>
           {#if $openProject?.metrics != null}
             <span class="py-4">
               <MetricRow metrics={$openProject?.metrics} />
