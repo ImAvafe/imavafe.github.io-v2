@@ -35,6 +35,7 @@ import SayHey2MeBanner from '$lib/img/projects/SayHey2Me.png';
 import FirefightBanner from '$lib/img/projects/Firefight.png';
 import LonekaRooms from '$lib/img/projects/LonekaRooms.png';
 import LonekaSuite from '$lib/img/projects/LonekaSuite.png';
+import NullRemote from '$lib/img/projects/NullRemote.png';
 
 export const projects: Project[] = [
 	{
@@ -302,6 +303,19 @@ export const projects: Project[] = [
 		role: 'Sole Developer',
 		description:
 			"My first Godot project; a simple game where you try to save your forest from an ever-intensifying fire. Made in 2 days with a foreign game engine, the codebase naturally isn't perfect. Nonetheless, I'm proud of the result, and I learned a lot along the way."
+	},
+	{
+		id: 'null-remote',
+		displayName: 'null-remote',
+		type: 'other',
+		platform: 'github',
+		href: 'https://github.com/ImAvafe/null-remote',
+		creationStamp: 1739042007,
+		bannerSrc: NullRemote,
+		role: 'Programmer',
+		displayType: 'Software',
+		description:
+			"The remote for my team's entry in a race car hackathon, built in 48 hours as a WebSocket-enabled SvelteKit web app running from the car's onboard Raspberry Pi."
 	},
 	{
 		id: 'ClimbOfChaos',
